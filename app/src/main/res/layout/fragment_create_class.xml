@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hack4throne.smartattendance.CreateClassFragment">
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:text="Department"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="27dp"
+
+            android:layout_marginTop="10dp"
+
+            android:entries="@array/dept_array"
+            android:popupBackground="@android:color/white"
+            android:scrollbars="none"
+
+            android:spinnerMode="dropdown">
+
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner_dept"
+            android:layout_below="@+id/spinner_dept"
+            android:layout_marginTop="24dp"
+            android:text="Year"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+
+            android:id="@+id/spinner_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="14dp"
+            android:entries="@array/year_array" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner_year"
+            android:layout_below="@+id/spinner_year"
+            android:layout_marginTop="27dp"
+            android:text="Class"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="18dp"
+            android:entries="@array/class_array" />
+
+        <Spinner
+            android:id="@+id/spinner_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner_class"
+            android:layout_below="@+id/spinner_class"
+            android:layout_marginTop="59dp"
+            android:entries="@array/semester_array" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner_semester"
+            android:layout_below="@+id/spinner_class"
+            android:layout_marginTop="25dp"
+            android:text="Semester"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_create_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create class"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner_semester"
+            android:layout_below="@+id/spinner_semester"
+            android:layout_marginTop="21dp"
+            android:text="Total Strength"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/spinner_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:hint="Strength"
+            android:inputType="number"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@+id/button_create_class"
+            android:text="Batch"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015"
+            android:id="@+id/batch"
+            android:layout_alignBaseline="@+id/spinner_strength"
+            android:layout_alignBottom="@+id/spinner_strength"
+            android:layout_toStartOf="@+id/button_create_class" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
